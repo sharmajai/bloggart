@@ -13,6 +13,7 @@ application = webapp.WSGIApplication([
   ('/admin/', handlers.AdminHandler),
   ('/admin/newpost', handlers.PostHandler),
   ('/admin/post/(\d+)', handlers.PostHandler),
+  ('/admin/post/delete/(\d+)', handlers.DeleteHandler),
   ('/admin/regenerate', handlers.RegenerateHandler),
 ])
 
