@@ -14,6 +14,7 @@ application = webapp.WSGIApplication([
   (config.url_prefix + '/admin/', handlers.AdminHandler),
   (config.url_prefix + '/admin/newpost', handlers.PostHandler),
   (config.url_prefix + '/admin/post/(\d+)', handlers.PostHandler),
+  (config.url_prefix + '/admin/post/delete/(\d+)', handlers.DeleteHandler),
   (config.url_prefix + '/admin/regenerate', handlers.RegenerateHandler),
 ])
 
